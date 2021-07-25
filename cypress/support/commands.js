@@ -8,9 +8,18 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
-//
+import loginselectors from '../fixtures/selectors/loginSelectors'
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+ Cypress.Commands.add('login', (email, password) => { 
+
+    cy.get(loginselectors.username).type(email)
+    cy.get(loginselectors.continueBtn).click()
+    cy.get(loginselectors.password).type(password)
+    cy.get(loginselectors.loginBtn).click()
+
+    
+
+  })
 //
 //
 // -- This is a child command --
