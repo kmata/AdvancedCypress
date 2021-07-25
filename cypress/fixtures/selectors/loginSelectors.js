@@ -1,7 +1,7 @@
 module.exports = {
-    username: 'input#user',
-    password: '#password',
-    loginBtn: '#login',
-    continueBtn: 'input#login',
+    username: '#email',
+    password: '#passwd',
+    loginBtn: '#SubmitLogin',
+    orderButton: 'a[title="Orders"] > span'
 
 }

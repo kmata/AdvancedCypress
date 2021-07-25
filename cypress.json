@@ -1,3 +1,4 @@
 {
-"baseUrl": "http://todomvc-app-for-testing.surge.sh/"
+"baseUrl": "http://todomvc-app-for-testing.surge.sh/",
+"chromeWebSecurity": false
 }

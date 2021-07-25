@@ -13,6 +13,10 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+Cypress.Cookies.defaults({
+    preserve: 'PrestaShop-a30a9934ef476d11b6cc3c983616e364'
+})
+
 // Import commands.js using ES2015 syntax:
 import './commands'
 

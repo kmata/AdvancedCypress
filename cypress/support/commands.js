@@ -13,7 +13,6 @@ import loginselectors from '../fixtures/selectors/loginSelectors'
  Cypress.Commands.add('login', (email, password) => { 
 
     cy.get(loginselectors.username).type(email)
-    cy.get(loginselectors.continueBtn).click()
     cy.get(loginselectors.password).type(password)
     cy.get(loginselectors.loginBtn).click()
 

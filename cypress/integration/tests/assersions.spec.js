@@ -22,14 +22,14 @@ it('Regular Asserisions', () => {
     .should('contain.text', "Milk")
 })
 
-it('Multiple Assersions', () =>{
+it('Multiple Assertions', () =>{
     cy.get(selector.label)
     .then (item => {
 
         if (item.length !== 3){
             throw new Error ('Not enough elements!')
         }
-        
+
         expect(item[0]).to.contains.text('App')
         expect(item[1]).to.contains.text('Milk')
     })
